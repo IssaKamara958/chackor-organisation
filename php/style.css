@@ -1,0 +1,271 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background: orangered;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#dac50e;
+  color:#000000;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:orangered 3px solid;
+}
+
+header a{
+  color:#000000;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:orangered;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#947b7b;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:800px;
+  background:url('../photo/grains-cafe-accessoires-pour-preparation-du-cafe_1220-4536.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#f1f51c;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:5em;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:4em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  /* color:#442406; */
+  color: orangered;
+  background:#eccb0f;
+  font-size: 1em;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 70vh;
+ background-color: #ddd;
+}
+
+#caroussel{
+  width: 900px;
+  overflow: hidden;
+  border: 2px solid #333;
+}
+
+.images{
+  display: flex;
+  animation-duration: 15s;
+  animation-name: box;
+  animation-iteration-count: infinite;
+}
+
+@keyframes box {
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(-600px);
+  }
+  50%{
+    transform: translateX(-1200px);
+  }
+  75%{
+    transform: translateX(-1800);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:90%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+#cart-col1{
+display: flex;
+flex-wrap: nowrap;
+}
+
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #f1f1f1 solid 1px;
+  margin-bottom:5px;
+  background:#d8980e;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#d8980e;
+  background: url('../photo/grains-cafe-accessoires-pour-preparation-du-cafe_1220-4536.jpg') repeat;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 668px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  #boxes{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 1000px;
+    display: block;
+  }
+  .container{
+    width: 100%;
+  } 
+   #logo{
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    height: 550px;
+    align-items: center;
+  }
+
+  #caroussel {
+    width: 100%;
+  }
+  
+  
+  .images{
+    margin: 10px;
+    
+    height: 400px;
+    align-items: center;
+
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}

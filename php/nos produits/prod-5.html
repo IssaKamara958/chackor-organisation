@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Chackor Org, Achakourou Café Touba" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Chackor Org, Achakourou Products, Achakourou Services"
+    />
+    <meta name="author" content="Issa KAMARA" />
+    <title>CHACKOR ORGANISATION | Achakourou Café Touba</title>
+    <link rel="icon" href="imgs/logo-ch.jpg" />
+    <style>
+      body {
+        background: url("imgs/black.jpg");
+      }
+
+      .bouton {
+        color: rgb(76, 0, 255);
+        text-align: end;
+      }
+
+      .carte-1 {
+        margin: 190px;
+        width: max-content;
+        background-color: black;
+        color: rgb(243, 140, 13);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 2em;
+      }
+      .carte-1 img {
+        margin-right: 35px;
+        margin-top: 30px;
+      }
+      span {
+        color: red;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1em;
+        text-decoration: tomato;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        header,
+        #prod-1 {
+          float: none;
+          text-align: center;
+          width: 100%;
+        }
+
+        .carte-1 {
+          width: auto;
+          margin: 15px;
+          text-align: center;
+        }
+
+        h2,
+        h3,
+        span {
+          font-size: medium;
+        }
+
+        header {
+          padding-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bouton">
+      <button id="btn" type="submit" class="button_1">
+        <a href="prod-4.html">Retour</a>
+      </button>
+      <button id="btn" type="submit" class="button_1">
+        <a href="https://wa.me/message/RB4P75TJKHTOP1">Commandez</a>
+      </button>
+      <button id="btn" type="submit" class="button_1">
+        <a href="prod-6.html">Suivant</a>
+      </button>
+    </header>
+
+    <section id="prod-1">
+      <a href="https://wa.me/message/RB4P75TJKHTOP1">
+        <div class="carte-1">
+          <ul>
+            <li>
+              <img src="imgs/250g.jpg" width="400px" height="244px" alt="" />
+              <img src="imgs/packs.jpg" width="400px" height="244px" alt="" />
+              <h2>ACHAKOUROU Café Touba</h2>
+              <h3>
+                Nos Packs <span>SPECIALE-XEWEUL</span> <br />
+                <span>250</span> grammes en <span>DOUZAINE</span>.
+              </h3>
+              <h3 style="color: red">Prix : 14900 francs CFA</h3>
+            </li>
+          </ul>
+        </div>
+      </a>
+    </section>
+  </body>
+</html>
